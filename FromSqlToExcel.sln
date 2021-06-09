@@ -5,6 +5,12 @@ VisualStudioVersion = 16.0.31402.337
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FromSqlToExcel.EntityFrameworkCore", "FromSqlToExcel.EntityFrameworkCore\FromSqlToExcel.EntityFrameworkCore.csproj", "{8538487F-EF15-498A-8014-56E5A144925E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FromSqlToExcel.Domain", "FromSqlToExcel.Domain\FromSqlToExcel.Domain.csproj", "{71630E78-F96E-47A6-8A80-693152DCCA18}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{7D2A69E3-5FBB-49B6-B194-BCABF51EC990}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FromSqlToExcel.TestConsole", "Tests\FromSqlToExcel.TestConsole\FromSqlToExcel.TestConsole.csproj", "{EA428284-CBBB-4731-A1B7-1925DA27D1F5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +21,20 @@ Global
 		{8538487F-EF15-498A-8014-56E5A144925E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8538487F-EF15-498A-8014-56E5A144925E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8538487F-EF15-498A-8014-56E5A144925E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71630E78-F96E-47A6-8A80-693152DCCA18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71630E78-F96E-47A6-8A80-693152DCCA18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71630E78-F96E-47A6-8A80-693152DCCA18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71630E78-F96E-47A6-8A80-693152DCCA18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA428284-CBBB-4731-A1B7-1925DA27D1F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA428284-CBBB-4731-A1B7-1925DA27D1F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA428284-CBBB-4731-A1B7-1925DA27D1F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA428284-CBBB-4731-A1B7-1925DA27D1F5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EA428284-CBBB-4731-A1B7-1925DA27D1F5} = {7D2A69E3-5FBB-49B6-B194-BCABF51EC990}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D139CB7F-D66B-42FF-B445-6E63822ADFFF}
