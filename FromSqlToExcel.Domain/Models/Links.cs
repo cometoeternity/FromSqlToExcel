@@ -8,7 +8,7 @@
 
         public override string ToString()
         {
-            return $"Входит в состав {IzdelUp} в количестве {Kol}";
+            return $"{Izdel} входит в состав {IzdelUp} в количестве {Kol}";
         }
     }
 }
