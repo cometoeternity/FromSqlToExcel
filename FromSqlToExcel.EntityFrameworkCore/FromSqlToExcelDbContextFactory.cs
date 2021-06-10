@@ -7,7 +7,7 @@ namespace FromSqlToExcel.EntityFrameworkCore
     {
         
 
-        public FromSqlToExcelDbContext CreateDbContext(string[] args)
+        public FromSqlToExcelDbContext CreateDbContext(string[] args = null)
         {
             var options = new DbContextOptionsBuilder<FromSqlToExcelDbContext>();
             options.UseSqlServer(@"Server=(localdb)\MSSQLLocalDB;Database=SimpleTraderDB;Trusted_Connection=true");

@@ -18,6 +18,12 @@ namespace FromSqlToExcel.EntityFrameworkCore
             optionsBuilder.UseSqlServer(@"Server=(localdb)\MSSQLLocalDB;Database=IzdeliyaDB;Trusted_Connection=true");
             base.OnConfiguring(optionsBuilder);
         }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Links>().HasNoKey();
+            base.OnModelCreating(modelBuilder);
+        }
     }
 }
-}
+
