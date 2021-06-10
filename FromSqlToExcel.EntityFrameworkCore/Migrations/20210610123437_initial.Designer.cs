@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FromSqlToExcel.EntityFrameworkCore.Migrations
 {
     [DbContext(typeof(FromSqlToExcelDbContext))]
-    [Migration("20210610122412_initial")]
+    [Migration("20210610123437_initial")]
     partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

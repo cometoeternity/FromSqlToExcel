@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using FromSqlToExcel.Domain.Models;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 using System;
 using System.Collections.Generic;
@@ -29,6 +30,18 @@ namespace FromSqlToExcel.EntityFrameworkCore.Services
             using FromSqlToExcelDbContext context = _contexFactory.CreateDbContext();
             IEnumerable<T> entities = await context.Set<T>().ToListAsync();
             return entities;
+        }
+        public async Task<Izdel> GetIzdel(int id)
+        {
+            using FromSqlToExcelDbContext context = _contexFactory.CreateDbContext();
+            Izdel entity = await context.Set<Izdel>().FirstOrDefaultAsync(i => i.Id == id);
+            return entity;
+        }
+        public async Task<Links> GetLink(string name)
+        {
+            using FromSqlToExcelDbContext context = _contexFactory.CreateDbContext();
+            Links entity = await context.Set<Links>().FirstOrDefaultAsync(l => l.Izdel.Name == name);
+            return entity;
         }
     }
 }
